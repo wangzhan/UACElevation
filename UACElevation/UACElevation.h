@@ -12,5 +12,9 @@ namespace uac
 
 	// 使用普通用户权限运行
 	BOOL RunAsStdUser(LPCTSTR lpszExePath, LPCTSTR lpszParameters);
+
+	BOOL Am_I_In_Admin_Group(BOOL bCheckAdminMode = FALSE);
+
+	BOOL EnablePrivilege(HANDLE hToken, LPCTSTR lpszPrivilegeName);
 }
 
